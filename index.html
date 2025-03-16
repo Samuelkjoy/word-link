@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Word Link Game</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <!-- Intro Screen -->
+  <div id="introScreen">
+    <h1>Welcome to Word Link</h1>
+    <p>Select your starting speed:</p>
+    <form id="speedForm">
+      <label><input type="radio" name="speed" value="0.5"> Slow</label>
+      <label><input type="radio" name="speed" value="1.0" checked> Normal</label>
+      <label><input type="radio" name="speed" value="1.5"> Fast</label>
+    </form>
+    <button id="startButton">Start Game</button>
+  </div>
+  
+  <!-- Game UI -->
+  <h1>Word Link</h1>
+  <div id="scoreboard">Score: <span id="score">0</span></div>
+  <div id="difficulty">Difficulty: <span id="diffLevel">1.0</span></div>
+  <div id="powerups">
+    <button id="multiplierButton">Activate Multiplier</button>
+    <button id="reshuffleButton">Reshuffle Board</button>
+  </div>
+  <div id="wordActions">
+    <button id="submitWordButton">Submit Word</button>
+    <button id="clearSelectionButton">Clear Selection</button>
+  </div>
+  <canvas id="gameCanvas" width="800" height="600"></canvas>
+  
+   <script src="script.js"></script>
+  
+</body>
+</html>
